@@ -1,5 +1,15 @@
 package ec.edu.insteclrg.domain;
 
-public class Nube {
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+    public class Nube {
+	private  Long id;
+	private  String Nombre ;
+	
 
 }

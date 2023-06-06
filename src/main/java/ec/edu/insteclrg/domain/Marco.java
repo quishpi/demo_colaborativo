@@ -4,12 +4,12 @@ import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 @Entity
-public class Angie {
-	
+@Setter
+@Getter
+public class Marco {
+
 	private Long id;
-	private String Nombre;
+	private String nombre;
 }
 
