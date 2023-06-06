@@ -9,7 +9,7 @@ import lombok.Setter;
 @Entity
     public class Nube {
 	private  Long id;
-	private  String nombre ;
+	private  String Nombre ;
 	
 
 }
