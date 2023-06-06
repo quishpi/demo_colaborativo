@@ -7,8 +7,9 @@ import lombok.Setter;
 @Entity
 @Setter
 @Getter
-public class Marco {
+public class Paul {
 
 	private Long id;
 	private String nombre;
 }
+
