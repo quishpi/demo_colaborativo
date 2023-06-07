@@ -3,15 +3,20 @@ package ec.edu.insteclrg.dto;
 import java.sql.Date;
 
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import lombok.Data;
 
+
+@Data
 public class HabitanteDTO {
 	
 
 	private Long id;
+	
 	private String nombre;
 	private String apellido;
 	private String identificacion;
@@ -22,6 +27,6 @@ public class HabitanteDTO {
 	//private TipoIdentificacion tipoIdentificacion;
 	//private Sexo sexo;
 	private byte[] foto;
-	private Casa casa;
+	private CasaDTO casaDTO;
 	
 }

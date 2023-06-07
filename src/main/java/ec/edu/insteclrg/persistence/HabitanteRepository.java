@@ -8,3 +8,4 @@ import ec.edu.insteclrg.domain.Habitante;
 public interface HabitanteRepository  extends JpaRepository< Habitante, Long>{
 
 }
+

@@ -2,7 +2,6 @@ package ec.edu.insteclrg.domain;
 
 import java.sql.Date;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -13,7 +12,6 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
-
 
 @Getter
 @Setter
@@ -26,35 +24,33 @@ public class Habitante {
 	private Long id;
 	
 	@Column(nullable = false)
-	private String Identificacion;
+	private String identificacion;
 	
-	@Column(nullable = false)
-	private Sexo sexo;
-	
-	@Column(nullable = false)
-	private Tipoidentificacion tipoidentificacion;
-	
-	@Column(nullable = false, length = 50)
+
+	@Column(nullable = false, length = 20)
 	private String nombre;
 	
-	@Column(updatable = false, length = 50)
+	@Column(nullable = false, length = 20)
 	private String apellido;
 	
-	@Column(updatable = false)
-	private Date fechadeNacimiento;
+	@Column(nullable = false)
+	private Date fechaNacimiento;
 	
-	@Column(updatable = false, length = 10)
+	
+	@Column(nullable = false, length = 10)
 	private String telefono;
 	
-	@Column(updatable = false, length = 50)
-	private String Email;
+	@Column(nullable = false, length = 50)
+	private String email;
 	
-	@Column(updatable = false)
-	private byte[] Foto;
+	
+	@Column(nullable = false)
+	private byte[] foto;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(nullable = false)
+	@JoinColumn( nullable = false)
 	private Casa casa;
+	
 	
 
 }
