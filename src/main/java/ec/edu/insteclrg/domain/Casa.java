@@ -1,6 +1,5 @@
 package ec.edu.insteclrg.domain;
 
-import ec.edu.insteclrg.domein.CiudadelaPrivada;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
