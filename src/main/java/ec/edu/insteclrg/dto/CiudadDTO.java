@@ -1,5 +1,6 @@
 package ec.edu.insteclrg.dto;
 
+
 import ec.edu.insteclrg.domain.Provincia;
 import lombok.Data;
 
