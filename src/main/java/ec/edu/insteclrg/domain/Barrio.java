@@ -31,6 +31,9 @@ public class Barrio {
     
     @Column()
     private Integer calificacionNegativa;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ciudad_id", nullable = false)
+    private Ciudad ciudad;
     
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tipoBarrio_id", nullable = false)
